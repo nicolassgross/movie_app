@@ -1,9 +1,37 @@
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     text-align: center;
-    background-color: black;
+    background-color: #4db6ac;
     color: #FFF;
     padding: 25px 0;
+    height: 100px;
+    position: static;
+    bottom: 0;
+    left: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.nav-extended {
+    background-image: url(../img/movie.jpg);
+    background-blend-mode: soft-light;
+}
+
+.tab a.active {
+    border-bottom: solid 2px #fff;
+    background-color: transparent;
+}
+
+nav ul li.active {
+    background-color: transparent;
+}
+
+.nav-header h1 {
+    text-shadow: 2px 2px 8px #000;
+}
+
+.nav-img {
+    object-position: center;
 }

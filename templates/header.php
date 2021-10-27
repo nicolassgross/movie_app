@@ -10,7 +10,7 @@
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- Estilos do projeto -->
-        <link rel="stylesheet" href="<?php $BASE_URL ?>css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <!-- Icons -->
@@ -18,16 +18,16 @@
     <title>MovieWare</title>
 </head>
 <body>
-    <nav class="nav-extended teal lighten-2">
+    <nav class="nav-extended grey darken-1">
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="right">
-                <li><a href="galeria.php">Galeria</a></li>
-                <li><a href="cadastrar.php">Cadastrar</a></li>
+                <li class="active"><a href="<?php $BASE_URL ?>./">Galeria</a></li>
+                <li><a href="addnewmovie.php">Cadastrar</a></li>
             </ul>
         </div>
         <div class="logo-header center">
             <a href="<?php $BASE_URL ?>./" id="logo">
-                <img src="https://img.icons8.com/color/96/000000/film-reel.png"/>
+                <img class="nav-img" src="https://img.icons8.com/color/96/000000/film-reel.png"/>
             </a>
         </div>
         <div class="nav-header center">
