@@ -24,7 +24,7 @@
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="right">
                 <li class="active"><a href="<?php $BASE_URL ?>./">Galeria</a></li>
-                <li><a href="addnewmovie.php">Cadastrar</a></li>
+                <li><a href="register.php">Cadastrar</a></li>
             </ul>
         </div>
         <div class="logo-header center">
