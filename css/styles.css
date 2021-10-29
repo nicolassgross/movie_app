@@ -29,9 +29,12 @@ nav ul li.active {
 }
 
 .nav-header h1 {
-    text-shadow: 2px 2px 8px #000;
+    text-shadow: 4px 4px 10px #000;
 }
 
-.nav-img {
-    object-position: center;
+
+/* Login / Register */
+
+#auth-row {
+    justify-content: space-evenly;
 }

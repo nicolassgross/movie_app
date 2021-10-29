@@ -7,7 +7,7 @@ include_once("helpers/process.php"); ?>
         <?php while ($filme = $res_select1->fetch(PDO::FETCH_ASSOC)) : ?>
             <div class="col s2">
                 <div class="card hoverable">
-                    <div class="card-image">
+                    <div id="cardimg" class="card-image">
                         <img src="<?= $filme['poster'] ?>">
                         <a class="btn-floating btn-large halfway-fab waves-effect waves-light red">
                             <i class="material-icons">favorite_border</i></a>
@@ -24,6 +24,12 @@ include_once("helpers/process.php"); ?>
         <?php endwhile ?>
     </div>
 </body>
+<script>
+    M.toast({
+        html: '<?= $_GET["msg"] ?>' 
+    });
+</script>
+
 
 </html>
 <?php

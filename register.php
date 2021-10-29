@@ -12,38 +12,38 @@ include_once("templates/header.php");
 </head>
 
 <body>
+
     <div class="row">
         <form action="newmovie.php" method="POST">
             <div class="col s5 offset-s3">
                 <div class="card">
                     <div class="card-content white-text">
                         <span class="card-title">Cadastro de filmes</span>
+                        <!-- INPUT DO TÍTULO DO FILME -->
                         <div class="row">
-                            <!-- INPUT DO TÍTULO DO FILME -->
                             <div class="input-field col s12">
-                                <input id="titulo" type="text" class="validate" name="titulo" require>
+                                <input id="titulo" type="text" class="validate" name="titulo" required>
                                 <label for="titulo">Título do Filme</label>
                             </div>
                         </div>
-                        
                         <!-- INPUT DO ANO DO FILME -->
                         <div class="row">
                             <div class="input-field col s4">
                                 <label for="date">Ano do Filme</label>
-                                <input id="ano" type="number" min="1900" class="validate" name="ano" require></input>
+                                <input id="ano" type="number" min="1900" class="validate" name="ano" required></input>
                             </div>
                         </div>
                         <!-- INPUT DA SINOPSE -->
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <label for="nota">Sinopse</label>
-                                    <textarea id="sinopse" class="materialize-textarea" name="sinopse"></textarea>
-                                </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="nota">Sinopse</label>
+                                <textarea id="sinopse" class="materialize-textarea" name="sinopse"></textarea>
                             </div>
+                        </div>
                         <!-- INPUT DA NOTA -->
                         <div class="row">
                             <div class="input-field col s4">
-                                <input id="nota" type="number" step=".1" min=".0" max="10" class="validate" name="nota" require>
+                                <input id="nota" type="number" step=".1" min=".0" max="10" class="validate" name="nota" required>
                                 <label for="nota">Nota</label>
                             </div>
                         </div>
@@ -55,13 +55,14 @@ include_once("templates/header.php");
                                     <input type="file">
                                 </div>
                                 <div class="file-path-wrapper">
-                                    <input type="text" class="file-path" name="poster">
+                                    <input type="text" class="file-path" name="poster" required>
                                 </div>
                             </div>
                         </div>
+                        <!-- BOTÕES CANCELAR/CADASTRAR -->
                         <div class="card-action">
                             <a class="waves-effect waves-light btn grey lighten-1" href="<?php $BASE_URL ?>./">Cancelar</a>
-                            <button type="submit" class="waves-effect waves-light btn teal darken-3 right">Cadastrar</button>
+                            <form method="GET" action="<?php $BASE_URL ?>./"><button type="submit" class="waves-effect waves-light btn teal darken-3 right">Cadastrar</button></form>
                         </div>
                     </div>
                 </div>
